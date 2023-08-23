@@ -8,7 +8,7 @@ $DarkBlue: hsl(218, 44%, 22%)
 *
     margin: 0
     padding: 0
-    box-size: border-box
+    box-sizing: border-box
 
 body
     max-width: 1440px
@@ -48,15 +48,18 @@ img
 
 .title
     color: $DarkBlue
-    font-size: x-large
+    font-size: 24px
     font-weight: 700
+    text-align: left
+    p
+        white-space: nowrap
+
 .text
     color: $GrayishBlue
     font-weight: 400
 
 /** Copyright */
 .attribution
-    background-color: #0f0
     height: 50px
     display: flex
     align-items: center
@@ -66,6 +69,9 @@ img
 .attribution a
     color: hsl(228, 45%, 44%)
 
+.cont p
+    display: inline-block
+
 @media (min-width: 400px)
     .container
         // background: #00f
@@ -73,17 +79,27 @@ img
     .card
         // background: #f00
         width: 30%
+
 @media (max-width:400px)
     .container
         // background: #f00
+
+@media (max-width:375px)
+    .title
+        font-size: 16px
+
+@media (max-width:1172px)
+    .title
+        // font-size: 22px
+        // background: #f00
+
 @media (min-width:1218px)
-    h1
-        border: solid
+    .title
+        // border: solid
 
 @media (min-width:1065px)
     .title
-        font-size: medium
-        background: #f00
+        // font-size: medium
 @media (min-width:1293px)
-    h1
-        font-size: medium
+    .title
+        // font-size: medium
