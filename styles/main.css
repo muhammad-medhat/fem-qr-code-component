@@ -26,6 +26,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 90vh;
 }
 
 .card {
@@ -36,8 +37,8 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* width: 46%; */
   align-items: center;
+  width: 45%;
 }
 
 .cont {
