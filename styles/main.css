@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-size: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -49,8 +49,12 @@ img {
 
 .title {
   color: hsl(218, 44%, 22%);
-  font-size: x-large;
+  font-size: 24px;
   font-weight: 700;
+  text-align: left;
+}
+.title p {
+  white-space: nowrap;
 }
 
 .text {
@@ -73,24 +77,17 @@ img {
   color: hsl(228, 45%, 44%);
 }
 
+.cont p {
+  display: inline-block;
+}
+
 @media (min-width: 400px) {
   .card {
     width: 30%;
   }
 }
-@media (min-width: 1218px) {
-  h1 {
-    border: solid;
-  }
-}
-@media (min-width: 1065px) {
+@media (max-width: 375px) {
   .title {
-    font-size: medium;
-    background: #f00;
-  }
-}
-@media (min-width: 1293px) {
-  h1 {
-    font-size: medium;
+    font-size: 16px;
   }
 }/*# sourceMappingURL=main.css.map */
